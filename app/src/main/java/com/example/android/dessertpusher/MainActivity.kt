@@ -154,8 +154,9 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
     override fun onStart() {
         super.onStart()
-        dessertTimer.startTimer()
+
         Timber.i("onStart is called")
+        dessertTimer.startTimer()
     }
 
     override fun onResume() {
@@ -170,8 +171,9 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
 
     override fun onStop() {
         super.onStop()
-        dessertTimer.stopTimer()
+
         Timber.i("onStop is called")
+        dessertTimer.stopTimer()
     }
 
     override fun onDestroy() {
